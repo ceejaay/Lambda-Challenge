@@ -7,8 +7,11 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-
+  var hello = "Hello World!"
+  return hello
 }
+ 
+ 
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -23,8 +26,17 @@ function helloWorld() {
              lambdaSchool(8); // returns 8
 */
 
-function lambdaSchool() {
-
+function lambdaSchool(num) {
+  var word_array = ["Lambda", "School", "Lambda School"]
+    if(num % 3 == 0 && num % 5 == 0){
+      return word_array[2]
+    } else 
+      if(num % 5 == 0) {
+        return word_array[1]
+    } else 
+      if(num % 3 == 0) {
+        return word_array[0]
+      }
 }
 
 /*
@@ -38,9 +50,11 @@ function lambdaSchool() {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
-
+function longestString(strs) {
+  strs.sort
+  return strs[0]
 }
+
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
