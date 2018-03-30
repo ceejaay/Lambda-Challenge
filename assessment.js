@@ -8,7 +8,8 @@ After writing your function uncomment the matching function reference at the bot
 
 function helloWorld() {
   var hello = "Hello World!"
-  return hello
+  return "Hello World!"
+  //return hello
 }
  
  
@@ -51,8 +52,16 @@ function lambdaSchool(num) {
 */
 
 function longestString(strs) {
-  strs.sort
-  return strs[0]
+  var length = 0;
+  var longest;
+  for(var i =0; i < strs.length; i++){
+    if(strs[i] > length) {
+      var length = strs[i].length;
+      longest = strs[i];
+    }
+
+  }
+  return longest
 }
 
 
@@ -77,7 +86,7 @@ function longestString(strs) {
              computeUserAverageAge(users); // returns 62 (This number is rounded up from 61.6666)
 */
 
-function computeUserAverageAge() {
+function computeUserAverageAge(users) {
 
 }
 
