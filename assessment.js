@@ -1,3 +1,4 @@
+//Completed assessment. March 30, 2018 Chad Jemmett. chad.jemmett@gmail.com
 /*
 Work through the problems in this file.  As you work through each problem periodically run: npm test
 Your function name and the string must match the instructions exactly otherwise the tests will fail.
