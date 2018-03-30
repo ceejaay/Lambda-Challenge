@@ -11,8 +11,8 @@ function helloWorld() {
   return "Hello World!"
   //return hello
 }
- 
- 
+
+
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -55,7 +55,7 @@ function longestString(strs) {
   var length = 0;
   var longest;
   for(var i =0; i < strs.length; i++){
-    if(strs[i] > length) {
+    if(strs[i].length > length) {
       var length = strs[i].length;
       longest = strs[i];
     }
@@ -88,6 +88,13 @@ function longestString(strs) {
 
 function computeUserAverageAge(users) {
 
+  var total_ages = 0
+  var total_users = users.length
+  for(var i = 0; i < users.length; i++) {
+    total_ages += users[i].age;
+  }
+ return Math.round(total_ages / total_users)
+ 
 }
 
 module.exports = {
